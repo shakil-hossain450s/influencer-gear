@@ -15,7 +15,7 @@ body {
     color: #3A3A3A;
 }
 
-nav {
+.desktop-menu {
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -23,25 +23,44 @@ nav {
     padding: 0 50px;
 }
 
-nav h3 {
+.desktop-menu h3 {
     font-size: 24px;
 }
 
-nav ul li {
+.desktop-menu ul li {
     list-style: none;
     display: inline-block;
     margin: 0 15px;
 }
 
-nav ul li a {
+.desktop-menu ul li a {
     text-decoration: none;
     font-weight: 600;
     color: #3A3A3A;
 }
 
-nav ul li a i {
+.desktop-menu ul li a i {
     font-size: 20px;
     font-weight: 600;
+}
+
+/* mobile menu */
+.mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px;
+}
+
+.menubar i,
+.cart i {
+    font-size: 24px;
+}
+
+.logo-text {
+    font-size: 18px;
 }
 
 /* top banner section style */
@@ -73,9 +92,7 @@ nav ul li a i {
 }
 
 .top-banner-image img {
-    width: 440px;
-    height: 414px;
-    padding: 10px;
+    width: 100%;
 }
 
 .circle {
@@ -113,9 +130,10 @@ nav ul li a i {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    row-gap: 20px;
 }
 
-/* product section style */
+/* collection section style */
 .collection-section {
     width: 90%;
     margin: 100px auto;
@@ -197,7 +215,6 @@ nav ul li a i {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-
 }
 
 .featured-section .featured-image {
@@ -263,4 +280,77 @@ footer .footer-info .footer-title {
     padding: 10px;
     border-radius: 50%;
     color: #fff;
+}
+
+/* responsive media quaries */
+/* mobile device */
+@media only screen and (max-width: 688px) {
+    body {
+        width: 100%;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .top-banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 80vh;
+        padding: 20px;
+    }
+
+    .top-banner-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-banner-title {
+        font-size: 28px;
+        /* margin-bottom: 16px; */
+    }
+
+    .top-banner-image {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .brand-section {
+        width: 95%;
+        padding: 20px 30px;
+    }
+
+    .brand-logos a img {
+        width: 80%;
+    }
+
+    .collection-section {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-section {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .featured-section .featured-image {
+        width: 100%;
+    }
+
+    .featured-section .featured-image img {
+        width: 100%;
+    }
+
+    .featured-section .featured-text {
+        width: 100%;
+    }
+
 }
