@@ -44,23 +44,8 @@ body {
     font-weight: 600;
 }
 
-/* mobile menu */
 .mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    line-height: 70px;
-    padding: 16px;
-}
-
-.menubar i,
-.cart i {
-    font-size: 24px;
-}
-
-.logo-text {
-    font-size: 18px;
+    display: none;
 }
 
 /* top banner section style */
@@ -291,6 +276,25 @@ footer .footer-info .footer-title {
 
     .desktop-menu {
         display: none;
+    }
+
+    /* mobile menu */
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        line-height: 70px;
+        padding: 16px;
+    }
+
+    .menubar i,
+    .cart i {
+        font-size: 24px;
+    }
+
+    .logo-text {
+        font-size: 18px;
     }
 
     .top-banner {
