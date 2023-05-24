@@ -82,6 +82,7 @@ nav ul li a i {
 }
 
 .preebook-btn {
+    display: inline-block;
     text-decoration: none;
     background-color: #E02C6D;
     padding: 10px 24px;
@@ -90,7 +91,7 @@ nav ul li a i {
     box-shadow: 1px 1px 10px #E02C6D;
 }
 
-.fa-arrow-right {
+.prebook-arrow {
     margin-left: 5px;
     color: white;
 }
@@ -166,4 +167,58 @@ nav ul li a i {
 
 .info {
     line-height: 15px;
+}
+
+.see-more-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.see-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #E02C6D;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: end;
+}
+
+.see-more-arrow {
+    color: #E02C6D;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+/* featured section style */
+.featured-section {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.featured-section .featured-image {
+    width: 40%;
+}
+
+.featured-section .featured-text h2 {
+    margin-bottom: 15px;
+}
+
+.featured-section .featured-text {
+    width: 55%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 1px 1px 10px #E02C6D;
 }
